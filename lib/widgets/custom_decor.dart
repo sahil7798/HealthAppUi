@@ -19,7 +19,8 @@ class CustomDecor extends StatelessWidget {
       child: Center(
           child: Text(
         title,
-        style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+        style: TextStyle(
+            color: Colors.black, fontWeight: FontWeight.w500, fontSize: 14),
       )),
     );
   }

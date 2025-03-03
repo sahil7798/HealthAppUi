@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class IconWithTitle extends StatelessWidget {
   final icon;
@@ -14,7 +15,7 @@ class IconWithTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Icon(Icons.medical_information, size: 40, color: color),
+        Icon(FontAwesomeIcons.capsules, size: 40, color: color),
         SizedBox(
           height: 5,
         ),

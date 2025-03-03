@@ -26,11 +26,13 @@ class CustomDecorIcon extends StatelessWidget {
           Text(
             title,
             style: TextStyle(
-                color: Colors.grey.shade900, fontWeight: FontWeight.w500),
+                fontSize: 14,
+                color: Colors.grey.shade900,
+                fontWeight: FontWeight.w500),
           ),
           Icon(
             icon,
-            size: 20,
+            size: 17,
             color: Colors.grey.shade600,
           )
         ],

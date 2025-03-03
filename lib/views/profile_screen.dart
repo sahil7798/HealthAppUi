@@ -47,6 +47,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     final controller = Provider.of<ProfileProvider>(context);
 
     return Scaffold(
+      backgroundColor: bgColor,
       // appBar: AppBar(
       //   leading: IconButton(
       //     icon: Icon(

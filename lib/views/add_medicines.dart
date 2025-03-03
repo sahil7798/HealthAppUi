@@ -94,6 +94,7 @@ class _AddMedicinesState extends State<AddMedicines> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: bgColor,
       // appBar: AppBar(
       //   elevation: 0,
       //   leading: IconButton(
@@ -345,10 +346,11 @@ class _AddMedicinesState extends State<AddMedicines> {
                           title: 'Total Count',
                         ),
                         Container(
-                          height: 20,
-                          width: 40,
+                          height: 25,
+                          width: 45,
                           decoration: BoxDecoration(
                             color: Colors.white,
+                            borderRadius: BorderRadius.circular(5),
                             boxShadow: [
                               BoxShadow(color: Colors.black26, blurRadius: 0.1)
                             ],
@@ -456,7 +458,7 @@ class _AddMedicinesState extends State<AddMedicines> {
                     Column(
                       children: List.generate(dose.length, (int index) {
                         return Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 10),
+                          padding: const EdgeInsets.symmetric(vertical: 5),
                           child: Column(
                             children: [
                               Row(
@@ -471,15 +473,13 @@ class _AddMedicinesState extends State<AddMedicines> {
                                   ),
                                   Text(
                                     'Dose ${dose[index]}',
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.w500),
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14),
                                   ),
                                   Spacer(),
-                                  Icon(
-                                    FontAwesomeIcons.chevronRight,
-                                    color: Colors.grey.shade600,
-                                    size: 20,
-                                  )
+                                  Icon(FontAwesomeIcons.chevronRight,
+                                      color: Colors.grey.shade600, size: 17)
                                 ],
                               ),
                               SizedBox(
