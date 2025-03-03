@@ -4,6 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:provider/provider.dart';
 import 'package:ui_assignment/provider/profile_provider.dart';
 import 'package:ui_assignment/utils/constatnts.dart';
+import 'package:ui_assignment/views/app_main_screen.dart';
 
 class ProfileScreen extends StatefulWidget {
   ProfileScreen({super.key});
@@ -135,7 +136,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       minVerticalPadding: 15,
                       titleTextStyle: TextStyle(
                           fontWeight: FontWeight.w600,
-                          fontSize: 17,
+                          fontSize: 16,
                           color: Colors.black),
                       subtitleTextStyle: TextStyle(
                           // fontWeight: FontWeight.w600,
@@ -251,7 +252,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         radius: 30,
                         child: IconButton(
                           padding: EdgeInsets.zero,
-                          icon: Icon(Icons.add),
+                          icon: Icon(
+                            Icons.add,
+                            size: 35,
+                          ),
                           color: Colors.white,
                           onPressed: () {},
                         ),
@@ -280,7 +284,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               text: 'invite link',
                               style: TextStyle(
                                 fontSize: 13,
-                                color: Color(0xFFF3DB01),
+                                color: Color.fromARGB(255, 235, 211, 1),
                               ),
                             ),
                           ],
@@ -331,7 +335,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             //backgroundColor: primaryColor,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20))),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      AppMainscreen()));
+                        },
                         child: Text(
                           "Log Out",
                           style: TextStyle(
@@ -368,15 +378,20 @@ class _ProfileScreenState extends State<ProfileScreen> {
         child: ListTile(
           selected: true,
           minVerticalPadding: 15,
-          titleTextStyle: TextStyle(fontWeight: FontWeight.w600, fontSize: 17),
-          leading: Icon(
-            icon,
-            size: 30,
+          titleTextStyle: TextStyle(
+              fontWeight: FontWeight.w600, fontSize: 16, color: Colors.black),
+          leading: Icon(icon, size: 30, color: Colors.black),
+          title: Text(
+            title,
+            style: TextStyle(
+                fontWeight: FontWeight.w600, fontSize: 16, color: Colors.black),
           ),
-          title: Text(title),
           subtitle: Padding(
             padding: const EdgeInsets.symmetric(vertical: 5),
-            child: Text(subtitle),
+            child: Text(
+              subtitle,
+              style: TextStyle(color: Colors.black, fontSize: 13),
+            ),
           ),
         ),
       ),
