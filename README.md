@@ -6,7 +6,8 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
  Screens
- ![image alt]([http://url/to/img.png](https://github.com/sahil7798/HealthAppUi/blob/master/screenshots/Screenshot_20250303_202317.jpg))
+![alt text]([http://url/to/img.png](https://github.com/sahil7798/HealthAppUi/blob/88881effbd5e4437f85c50ba97ec0cb075ad8a70/Screenrecording_20250303_203409.gif))
+ 
 
 
 
