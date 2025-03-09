@@ -308,7 +308,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       height: 25,
                     ),
                     ProfileSectionTitle(
-                      title: 'Termas Of Use',
+                      title: 'Terms Of Use',
                     ),
                     SizedBox(
                       height: 25,
